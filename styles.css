@@ -112,17 +112,174 @@ p {
   align-items: stretch;
 }
 
-.examples  .oNe, .tWo, .tHree {
+.examples  .oNe {
   height: 100px;
   width: 100px;
+  height: 20px;
+  width: 20px;
+  border: 5px solid black;
 }
 
+.ourTeam {
+  display: grid;
+  grid-template-columns: 700px;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-around;
+}
+
+.oUrTeAm {
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+  padding-bottom: 30px;
+}
+
+.oT {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.Ot {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 150px 30px;
+  align-items: stretch;
+  margin-left: 200px;
+  margin-right: 200px;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.Wtitles {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  height: 25px;
+  margin-left: 200px;
+  margin-right: 200px;
+  align-items: stretch;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.Ot h4 {
+  font-size: 20px;
+  margin-top: 10px;
+  height: 20px;
+}
+
+.socialS img{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 20px;
+  width: 20px;
+}
+
+.socialS{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  justify-items: center;
+  align-items: stretch;
+  margin-left: 185px;
+  margin-right: 175px;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.onE, .twO, .thRee, .fouR {
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
+}
+
+footer {
+  background-color: #282828;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  padding-top: 30px;
+  height: 300px;
+}
+
+footer > socialss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+footer socialss img {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  margin-right: 80px;
+}
+
+.ls {
+  display: flex;
+  flex: 1;
+  height: 20px;
+  width: 20px;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+
+.lss {
+  height: 20px;
+  width: 20px;
+}
+
+div p {
+  padding-right: 25px;
+  padding-left: 10px;
+}
+
+.CompInfo {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#Info1 {
+  color: white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 20px;
+}
+
+address #email {
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.mainFooter {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    color: #777;
+    padding-top: 30px;
+}
+
+hr {
+  width: 1000px;
+  color: rgb(68, 68, 68);
+}
+
+
 @media(max-width: 599px){
+
   .menu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 50%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -150,8 +307,17 @@ p {
   h3 {
     font-family: 'Overpass', sans-serif;
     margin: 0%;
+    text-align: center;
+    text-decoration: underline;
   }
   
+  h4 {
+    font-family: 'Overpass', sans-serif;
+    margin: 0%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
   p {
     margin-top: 0%;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -159,37 +325,106 @@ p {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
-    overflow: auto;
-  }
-  
-  .Oone {
-    display: grid;
-    justify-content: center;
   }
   
   .examples {
     display: grid;
-    grid-template-columns: 1fr;
-    overflow: auto;
-    gap: 30px;
-    justify-items: center;
-    align-items: stretch;
+    grid-template-columns: 400px;
+    justify-items: stretch;
   }
   
-  .oNe {
+  .oNe {   
+    display: grid;
+    justify-content: center;
+    border: 5px solid black;
     height: 20px;
     width: 20px;
-  }
+    }
 
-  .tWo {
-    height: 20px;
-    width: 20px;
-  }
+    .oUrTeAm {
+      display: grid;
+    }
 
-  .tHree {
-    height: 20px;
-    width: 20px;
-  }
-  
+    .ourTeam {
+      display: grid;
+      grid-template-columns: 500px;
+      grid-template-rows: 50px;
+    }
 
-}
+    .Ot {
+      display: grid;
+      grid-template-columns: 250px 250px;
+      grid-template-rows: 100px 100px 100px 200px;
+    }
+
+    .tM {
+      height: 150px;
+      width: auto;
+      border: 4px solid #282828;
+    }
+    
+    .socials img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .socials {
+      text-align: center;
+      gap: 5px;
+      padding-bottom: 10px;
+    }
+
+    .sSLSS {
+      font-size: 20px;
+    } 
+
+    footer {
+      background-color: #282828;
+      color: #777;
+      height: 600px;;
+    }
+
+    .socialss {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      background-color: #282828;
+      }
+
+      .ls {
+       height: 20px;
+       width: 500px;
+       justify-self: center;
+       align-items: center;
+      }
+
+    .CompInfo {
+      display: grid;
+      grid-template-columns: 220px;
+      grid-template-rows: 100px;
+      gap: 10px;
+      padding-top: 50px;
+      }
+
+    #Info1 {
+      color: white;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-size: 20px;
+      }
+
+    address #email {
+      text-align: center;
+      font-size: 16px;
+      }
+
+    .mainFooter {
+        display: grid;
+        color: #777;
+      }
+
+    hr {
+      width: 600px;
+      color: rgb(68, 68, 68);
+    }
+
+    }
